@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+
+<style>
+    @media(min-width: 1000px){
+        body{
+            background-color: green;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        p::after{
+            content: "Tela Grande";
+        }
+    }
+
+    @media(min-width: 600px) and (max-width: 999px){
+        body{
+            background-color: yellow;
+        }
+
+        p{
+            font-size: 25px;
+        }
+
+        p::after{
+            content: "Tela Media";
+        }
+    }
+
+    @media(max-width: 599px){
+        body{
+            background-color: red;
+        }
+
+        p{
+            font-size: 35px;
+        }
+
+        p::after{
+            content: "Tela Pequena";
+        }
+    }
+</style>
+<body>
+    <p>Tipo de tela:</p>
+</body>
+</html>

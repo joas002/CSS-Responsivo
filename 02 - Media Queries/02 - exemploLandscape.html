@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Landscape/Retrato</title>
+</head>
+
+<style>
+    div{
+        font-size: 3rem;
+        display: none;
+        margin:  10px;
+        border: 3px solid rgb(0, 0, 0);
+    }
+
+    @media(max-width: 1000px), (orientation: landscape){
+        .landscape{
+            display: block;
+            background-color: green;
+        }
+        
+    }
+    
+
+    @media(min-width: 400px) and (max-width: 1000px){
+        .mobile{
+            display: block;
+            background-color: yellow;
+        }
+    }
+
+
+    @media(max-width: 600px){
+        .extra-small{
+            display: block;
+            background-color: red;
+        }
+    }
+</style>
+<body>
+    <div class="extra-small">Dispositivos bem pequenos</div>
+    <div class="landscape">Dispositivos Móveis ou em modo retrato</div>
+    <div class="mobile">Dispositivos Móveis</div>
+</html>

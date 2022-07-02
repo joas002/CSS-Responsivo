@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução Flex Challenge - Ex.14</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    section{
+        display: grid;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        font-size: 2rem;
+        background-color: #a600ff;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    .sm{
+        width: 100px;
+        height: 100px;
+    }
+
+    .bg{
+        width: 300px;
+        height: 300px;
+    }
+
+    h1{
+
+    }
+
+    .grid-container{
+        display: grid;
+        background-color: aquamarine;
+
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        row-gap: 50px;
+    }
+</style>
+<body>
+    <h1>Solução Flex Challenge - Ex.14</h1>
+    <section class="grid-container">
+        <div class="bg">1</div>
+        <div>2</div>
+        <div class="sm">3</div>
+        <div>4</div>
+        <div class="sm">5</div>
+        <div class="bg">6</div>
+    </section>
+</body>
+</html>

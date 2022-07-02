@@ -13,30 +13,29 @@
 </head>
 
 <style>
-
-    .menu-toggle{
+    .menu-toggle {
         display: none;
         background-color: #555;
-        border:1px solid #777;
+        border: 1px solid #777;
         border-radius: 5px;
         color: #fff;
         height: 40px;
         padding: 10px 20px;
     }
 
-@media(max-width: 968px){
-    header nav{
-        display: none;
+    @media(max-width: 968px) {
+        header nav {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: block;
+            float: right;
+            cursor: pointer;
+        }
     }
 
-    .menu-toggle{
-        display: block;
-        float: right;
-        cursor: pointer;
-    }
-}
-
-    header{
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;

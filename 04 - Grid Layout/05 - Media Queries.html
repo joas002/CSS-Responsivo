@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,26 @@
     <title>Media Queries</title>
 </head>
 <style>
-    section{
+    section {
         display: grid;
         grid-template-columns: 3fr 6fr 3fr;
     }
 
-    @media(max-width: 1366px){
-        section{
+    @media(max-width: 1366px) {
+        section {
             grid-template-columns: 1 fr 1fr;
         }
     }
 
     @media(max-width: 768px) {
-        section{
+        section {
             grid-template-columns: 1fr;
         }
     }
-
 </style>
+
 <body>
-     <section id="grid-1">
+    <section id="grid-1">
         <div class="div1">1</div>
         <div class="div2">2</div>
         <div class="div3">3</div>
@@ -42,4 +43,5 @@
         <div class="div12">12</div>
     </section>
 </body>
+
 </html>

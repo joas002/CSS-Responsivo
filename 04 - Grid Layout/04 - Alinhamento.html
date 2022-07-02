@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,34 @@
 </head>
 
 <style>
-    div{
+    div {
         width: 100px;
         height: 100px;
     }
 
-    section{
-    border: 5px orange solid;
-    display: grid;
-    padding: 50px;
-    row-gap: 50px;
-    column-gap: 20px;
+    section {
+        border: 5px orange solid;
+        display: grid;
+        padding: 50px;
+        row-gap: 50px;
+        column-gap: 20px;
 
-    grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    /* justify-content: center;
+        /* justify-content: center;
     justify-items: center; */
 
-    grid-template-columns: repeat(3, 20%);
-    justify-content: space-between;
-    justify-items: center;
+        grid-template-columns: repeat(3, 20%);
+        justify-content: space-between;
+        justify-items: center;
 
-    height: 100vh;
-    grid-template-columns: repeat(6, 1fr);
+        height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
 
-    align-content: center;
+        align-content: center;
     }
-
-
 </style>
+
 <body>
     <section id="grid-1">
         <div class="div1">1</div>
@@ -54,4 +54,5 @@
         <div class="div12">12</div>
     </section>
 </body>
+
 </html>

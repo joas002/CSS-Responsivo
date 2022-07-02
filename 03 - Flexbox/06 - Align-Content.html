@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wrap</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>display flex</title>
-</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.flex-container div {
+			background-color: red;
+			font-size: 2rem;
+			margin: 5px;
+            width: 50px;
+		}
 
-<style>
-    *{
-        padding: 0;
-        margin: 0%;
-    }
-    .flex-cont {
-        border: 1px blue solid;
-        width: 50vw;
-        height: 50vh;
-        display: flex;
-        
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+		.flex-container {
+			border: 1px blue solid;
+            width: 50vw;
+			height: 50vh;
+			display: flex;
 
-        flex-wrap: wrap;
-        align-content: space-around;
-    }
+			flex-direction: row;
+			justify-content: space-around;
+            align-items: center;
 
-    .flex-cont div {
-        background-color: red;
-        margin: 5px;
-        font-size: 2rem;
-        height: 150px;
-        width: 150px;
-        align-items: center;
-    }
-</style>
+            flex-wrap: wrap;
+		}
+	</style>
 
-<body>
-    <section class="flex-cont">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-    </section>
-</body>
-
+	<body>
+		<section class="flex-container">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</section>
+	</body>
 </html>

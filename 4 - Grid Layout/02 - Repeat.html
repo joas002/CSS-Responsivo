@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Repeat</title>
+</head>
+
+<style>
+
+    section{
+    border: 5px orange solid;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-columns: repeat(6, 16.66%) ;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(2, 50%);
+
+    grid-template-columns: 2fr 5fr 2fr;
+     /*Equivalente a 25% 50% 25% */
+    grid-template-columns: repeat(12, 1fr);
+
+    /* Não é legivel */
+    grid-template-columns: 100px repeat(2, 15%) 1FR;
+}
+</style>
+<body>
+    <body>
+        <section id="grid-1">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+            <div class="div5">5</div>
+            <div class="div6">6</div>
+            <div class="div7">7</div>
+            <div class="div8">8</div>
+            <div class="div9">9</div>
+            <div class="div10">10</div>
+            <div class="div11">11</div>
+            <div class="div12">12</div>
+        </section>
+</body>
+</html>

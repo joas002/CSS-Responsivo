@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Background</title>
+	</head>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+        body{
+            padding: 50px;
+        }
+
+		div {
+			border: 5px solid red;
+		}
+
+		.portrait {
+			height: 400px;
+			width: 200px;
+			margin-bottom: 10px;
+		}
+
+		.landscape {
+			height: 300px;
+			width: 800px;
+			margin-bottom: 10px;
+		}
+
+		.square {
+			float: left;
+			height: 350px;
+			width: 350px;
+			margin-left: 20px;
+		}
+
+        .img-01{
+            background-image: url(image01.jpg);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-02{
+            background-image: url(image02.jpg);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-03{
+            background-image: url(image03.jpg);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        p{
+            background-color: red;
+            color: #fff;
+        }
+	</style>
+
+	<body>
+		<div class="portrait img-01"></div>
+
+		<div class="landscape img-02"></div>
+
+		<div class="square img-01">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae odit aliquam libero natus. Enim quae quas consequuntur delectus, saepe recusandae. Eum sint exercitationem obcaecati excepturi illum animi molestiae debitis.</p>
+        </div>
+		<div class="square img-02"></div>
+		<div class="square img-03"></div>
+	</body>
+</html>

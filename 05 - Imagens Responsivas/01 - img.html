@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        padding: 50px;
+    }
+
+    div{
+        border: 5px solid red;
+    }
+
+    .portrait{
+        height: 400px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .landscape{
+        height: 300px;
+        width: 800px;
+        margin-bottom: 10px;
+    }
+
+    .square{
+        float: left;
+        height: 350px;
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .square img{
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="portrait">
+        <img src="./image02.jpg">
+    </div>
+
+    <div class="landscape">
+        <img src="./image01.jpg">
+    </div>
+
+    <div class="square">
+        <img src="./image01.jpg">
+    </div>
+    <div class="square">
+        <img src="./image02.jpg">
+    </div>
+    <div class="square">
+        <img src="./image03.jpg">
+    </div>
+</body>
+</html>
